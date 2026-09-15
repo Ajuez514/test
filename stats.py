@@ -39,3 +39,8 @@ def letter_grade(avg):
     if avg >= 60:
         return "D"
     return "F"
+
+
+def broken():
+    unused = 42
+    return "ok"

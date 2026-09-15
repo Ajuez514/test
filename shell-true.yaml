@@ -1,0 +1,7 @@
+rules:
+  - id: subprocess-shell-true
+    languages: [python]
+    severity: WARNING
+    message: subprocess with shell=True is dangerous (shell injection)
+    patterns:
+      - pattern: subprocess.Popen(..., shell=True, ...)

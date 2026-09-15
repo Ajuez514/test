@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的 GitHub Pages</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 0 20px;
+            line-height: 1.7;
+            color: #222;
+        }
+        h1 { color: #0366d6; }
+        .meta { color: #666; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <h1>👋 你好，GitHub Pages！</h1>
+    <p>这是我的第一个自动发布的页面。</p>
+    <p class="meta">由 GitHub Actions 自动部署 · <span id="time"></span></p>
+    <script>
+        document.getElementById("time").textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
